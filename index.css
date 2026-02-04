@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.app {
+  width: 1600px;
+  
+  background: white;
+  
+  border-radius: 6px;
+}
+
+.center {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.add-btn {
+  padding: 8px 16px;
+  background-color: rgb(255, 63, 63);
+  border: none;
+  border-radius: 10px;
+}
+
+table {
+  width: 95%;
+  border-collapse: collapse;
+}
+
+th{
+  border: 2px solid black;
+  padding: 8px;
+}
+td{
+  border: 1px solid black;
+  padding: 8px;
+}
+input, select {
+  width: 100%;
+}
+
+.delete-btn {
+  cursor: pointer;
+}
+
+/* Статусы */
+.status-active {
+  background: #ffd6d6;
+}
+
+.status-done {
+  background: #d6ffd6;
+}
+
+/* Дедлайн */
+.deadline-active {
+  color: red;
+}
+
+.deadline-done {
+  color: green;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  width: 300px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+/* Верхняя панель фильтров */
+.filter-bar {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.filter-bar button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: rgb(255, 63, 63);;
+}
+
+.filter-bar button:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.active-filter {
+  background: #4caf50;
+  color: white;
+}
